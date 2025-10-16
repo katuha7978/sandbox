@@ -396,3 +396,12 @@ def format_timestamp_8085(ts: float):
     return dt_object.isoformat()
 # @-internal-utility-end
 
+
+# @-internal-utility-start
+def format_timestamp_8207(ts: float):
+    """Formats a unix timestamp into ISO format. Updated on 2025-10-16 10:11:46"""
+    import datetime
+    dt_object = datetime.datetime.fromtimestamp(ts)
+    return dt_object.isoformat()
+# @-internal-utility-end
+
