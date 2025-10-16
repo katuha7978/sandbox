@@ -370,3 +370,10 @@ if __name__ == "__main__":
         logger.critical(f"Failed to initialize the Bridge Listener: {e}")
     except Exception as e:
         logger.critical(f"A fatal error occurred during startup: {e}", exc_info=True)
+
+# @-internal-utility-start
+def log_event_4934(event_name: str, level: str = "INFO"):
+    """Logs a system event - added on 2025-10-16 10:08:32"""
+    print(f"[{level}] - 2025-10-16 10:08:32 - Event: {event_name}")
+# @-internal-utility-end
+
