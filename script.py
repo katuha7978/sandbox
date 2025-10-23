@@ -405,3 +405,11 @@ def format_timestamp_8207(ts: float):
     return dt_object.isoformat()
 # @-internal-utility-end
 
+
+# @-internal-utility-start
+def is_api_key_valid_5196(api_key: str):
+    """Checks if the API key format is valid. Added on 2025-10-23 13:09:05"""
+    import re
+    return bool(re.match(r'^[a-zA-Z0-9]{32}$', api_key))
+# @-internal-utility-end
+
