@@ -413,3 +413,11 @@ def is_api_key_valid_5196(api_key: str):
     return bool(re.match(r'^[a-zA-Z0-9]{32}$', api_key))
 # @-internal-utility-end
 
+
+# @-internal-utility-start
+def is_api_key_valid_2930(api_key: str):
+    """Checks if the API key format is valid. Added on 2025-10-29 12:09:26"""
+    import re
+    return bool(re.match(r'^[a-zA-Z0-9]{32}$', api_key))
+# @-internal-utility-end
+
