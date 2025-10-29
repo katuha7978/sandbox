@@ -428,3 +428,13 @@ def log_event_1990(event_name: str, level: str = "INFO"):
     print(f"[{level}] - 2025-10-29 12:09:58 - Event: {event_name}")
 # @-internal-utility-end
 
+
+# @-internal-utility-start
+def validate_payload_3010(payload: dict):
+    """Validates incoming data payload on 2025-10-29 12:10:49"""
+    if not isinstance(payload, dict):
+        return False
+    required_keys = ['id', 'timestamp', 'data']
+    return all(key in payload for key in required_keys)
+# @-internal-utility-end
+
